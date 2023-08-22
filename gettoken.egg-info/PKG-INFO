@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gettoken
+Version: 1.0.0
+Summary: A simple commandline app for getting token for a context
+Home-page: UNKNOWN
+Author: Saurav Sagar
+Author-email: sauravasagar19@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# gettoken A simple commandline app for getting token for GKE
+
+## Using Pip
+
+```bash
+  $ pip install cver
+```
+

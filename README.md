@@ -1,2 +1,7 @@
-# gettoken
-Python CLI to get token for GCP 
+# gettoken A simple commandline app for getting token for GKE
+
+## Using Pip
+
+```bash
+  $ pip install cver
+```

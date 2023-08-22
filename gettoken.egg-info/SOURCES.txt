@@ -1,0 +1,11 @@
+README.md
+setup.py
+getstoken/__init__.py
+getstoken/__main__.py
+getstoken/parserkube.py
+gettoken.egg-info/PKG-INFO
+gettoken.egg-info/SOURCES.txt
+gettoken.egg-info/dependency_links.txt
+gettoken.egg-info/entry_points.txt
+gettoken.egg-info/requires.txt
+gettoken.egg-info/top_level.txt
