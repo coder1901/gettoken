@@ -20,7 +20,7 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs \
 setup (
  name = 'gettoken',
  description = 'A simple commandline app for getting token for a context',
- version = '1.0.1',
+ version = '1.0.2',
  packages = find_packages(), # list of all packages
  install_requires = install_requires,
  python_requires='>=2.7', # any python greater than 2.7
