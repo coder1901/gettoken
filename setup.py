@@ -18,7 +18,7 @@ install_requires = [x.strip() for x in all_reqs if ('git+' not in x) and (
 dependency_links = [x.strip().replace('git+', '') for x in all_reqs \
                     if 'git+' not in x]
 setup (
- name = 'gettoken',
+ name = 'tokencli',
  description = 'A simple commandline app for getting token for a context',
  version = '1.0.0',
  packages = find_packages(), # list of all packages
@@ -29,7 +29,7 @@ setup (
         gettoken=getstoken.__main__:main
     ''',
  author="Saurav Sagar",
- keyword="gettoken,gke,googlegroups,k8sDashboard",
+ keyword="tokencli,gettoken,gke,googlegroups,k8sDashboard",
  long_description=README,
  long_description_content_type="text/markdown",
  license='MIT',

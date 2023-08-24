@@ -1,4 +1,0 @@
-
-        [console_scripts]
-        gettoken=getstoken.__main__:main
-    

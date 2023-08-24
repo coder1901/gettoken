@@ -12,19 +12,13 @@ def main():
 @main.command()
 @click.argument('file_path', required=False)
 def printContext(**kwargs):
-    print_contexts(kwargs.get("keyword"))
+    print_contexts()
     
 
 @main.command()
 @click.argument('name', required=False)
-def getToken(**kwargs):
+def gettoken(**kwargs):
     get_token()
-
-    # click.echo(f'CVE-ID \n\n{details["cve-id"]}\n')
-    # click.echo(f'Description \n\n{details["description"]}\n')
-    # click.echo(f'References \n\n{details["references"]}\n')
-    # click.echo(f'Assigning CNA \n\n{details["assigning cna"]}\n')
-    # click.echo(f'Date Entry \n\n{details["date entry created"]}')
 
 
 if __name__ == '__main__':

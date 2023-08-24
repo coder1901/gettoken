@@ -11,7 +11,8 @@ def parse_kubeconfig(kubeconfig_path):
         kubeconfig = yaml.safe_load(f)
     return kubeconfig
 
-def print_contexts(kubeconfig):
+def print_contexts():
+    kubeconfig = parse_kubeconfig(KUBE_CONFIG_PATH)
     contexts = kubeconfig.get('contexts', [])
     print("Available contexts:")
     for idx, context in enumerate(contexts, start=1):
@@ -41,8 +42,8 @@ def print_contexts(kubeconfig):
 #             print("Invalid input. Please enter a number or 'q' to quit.")
 
 def get_token():
+    print_contexts()
     kubeconfig = parse_kubeconfig(KUBE_CONFIG_PATH)
-    print_contexts(kubeconfig)
     while True:
         selection = input("Enter the index of the context you want to use (or 'q' to quit): ")
         if selection.lower() == 'q':
@@ -71,3 +72,6 @@ def get_token():
                 print("Invalid selection. Please choose a valid number.")
         except ValueError:
             print("Invalid input. Please enter a number or 'q' to quit.")
+
+if __name__ == "__main__":
+    get_token()
