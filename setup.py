@@ -18,9 +18,9 @@ install_requires = [x.strip() for x in all_reqs if ('git+' not in x) and (
 dependency_links = [x.strip().replace('git+', '') for x in all_reqs \
                     if 'git+' not in x]
 setup (
- name = 'tokencli',
+ name = 'gettoken',
  description = 'A simple commandline app for getting token for a context',
- version = '1.0.0',
+ version = '1.0.1',
  packages = find_packages(), # list of all packages
  install_requires = install_requires,
  python_requires='>=2.7', # any python greater than 2.7
