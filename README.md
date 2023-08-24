@@ -3,5 +3,5 @@
 ## Using Pip
 
 ```bash
-  $ pip install cver
+  $ pip install gettoken
 ```
